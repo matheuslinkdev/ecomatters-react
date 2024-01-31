@@ -1,6 +1,10 @@
+import TextosSobre from "../../Componentes/TextosSobre"
+
 const SobrePage = () => {
   return (
-    <div>SobrePage</div>
+    <main>
+      <TextosSobre/>
+    </main>
   )
 }
 

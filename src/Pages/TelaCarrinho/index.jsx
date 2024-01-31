@@ -1,6 +1,10 @@
+import Carrinho from "../../Componentes/Carrinho"
+
 const TelaCarrinho = () => {
   return (
-    <div>TelaCarrinho</div>
+    <main>
+      <Carrinho/>
+    </main>
   )
 }
 

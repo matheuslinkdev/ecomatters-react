@@ -1,6 +1,10 @@
+import Planos from "../../Componentes/Planos"
+
 const PlanosPage = () => {
   return (
-    <div>PlanosPage</div>
+    <main>
+      <Planos/>
+    </main>
   )
 }
 

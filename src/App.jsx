@@ -1,11 +1,15 @@
-function App() {
+import { Outlet, Router, Routes } from "react-router-dom";
 
+function App() {
   return (
     <>
-      <h1>Hello, EcoMatters here</h1>
+      <Router>
+        <Routes>
+          <Outlet />
+        </Routes>
+      </Router>
     </>
-     
-  )
+  );
 }
 
-export default App
+export default App;

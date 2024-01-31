@@ -1,7 +1,8 @@
-
 const Produtos = () => {
   return (
-  <div>Produtos</div>
+  <main>
+    <h1>Produtos</h1>
+  </main>
   );
 };
 

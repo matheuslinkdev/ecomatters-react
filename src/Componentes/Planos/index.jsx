@@ -1,6 +1,8 @@
 const Planos = () => {
   return (
-    <div>Planos</div>
+    <main>
+      <h1>Planos</h1>
+    </main>
   )
 }
 

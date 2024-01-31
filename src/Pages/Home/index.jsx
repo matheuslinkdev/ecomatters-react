@@ -1,6 +1,10 @@
+import CaixasRedirecionamento from "../../Componentes/CaixasRedirect"
+
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <main>
+      <CaixasRedirecionamento/>
+    </main>
   )
 }
 

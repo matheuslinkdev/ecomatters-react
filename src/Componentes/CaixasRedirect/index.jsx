@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom"
+
 const CaixasRedirecionamento = () => {
   return (
-    <div>CaixasRedirecionamento</div>
+    <article>
+      <section><Link to="/planos">Planos</Link></section>
+      <section><Link to="/loja">Loja</Link></section>
+      <section><Link to="/sobre">Sobre</Link></section>
+    </article>
   )
 }
 
