@@ -9,14 +9,14 @@ const CaixasRedirecionamento = () => {
       </section>
       <section>
         <Link to="/loja">Loja</Link>
-        <p>Quem somos, por que existimos e quais nossos objetivos?</p>
-      </section>
-      <section>
-        <Link to="/sobre">Sobre</Link>
         <p>
           Explore nossos produtos produzidos com foco no mínimo impacto
           ambiental.
         </p>
+      </section>
+      <section>
+        <Link to="/sobre">Sobre</Link>
+        <p>Quem somos, por que existimos e quais nossos objetivos?</p>
       </section>
     </article>
   );
