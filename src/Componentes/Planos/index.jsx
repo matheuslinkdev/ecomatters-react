@@ -1,3 +1,4 @@
+import BotaoAssinar from "./BotaoAssinar";
 import { planos } from "./data/planos";
 
 const Planos = () => {
@@ -22,6 +23,7 @@ const Planos = () => {
                 <h4>R${plano.precoAnual}</h4>
                 <span>Anual</span>
               </div>
+              <BotaoAssinar/>
             </section>
           );
         })}
