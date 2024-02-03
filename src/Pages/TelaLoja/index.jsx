@@ -1,11 +1,13 @@
-import Produtos from "../../Componentes/Produtos"
+import { Link } from "react-router-dom";
+import Produtos from "../../Componentes/Produtos";
 
 const TelaLoja = () => {
   return (
     <main>
-      <Produtos/>
+      <Link to="/carrinho">Carrinho</Link>
+      <Produtos />
     </main>
-  )
-}
+  );
+};
 
-export default TelaLoja
+export default TelaLoja;
