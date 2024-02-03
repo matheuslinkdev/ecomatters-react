@@ -1,9 +1,20 @@
-const Carrinho = () => {
-  return (
-    <main>
-      <h1>Carrinho</h1>
-    </main>
-  )
-}
+import { useCarrinho } from "../../Contexts/CarrinhoContext";
 
-export default Carrinho
+const Carrinho = () => {
+  const { carrinho } = useCarrinho();
+
+  return (
+    <div>
+      <h2>Carrinho de Compras</h2>
+      <ul>
+        {carrinho.map((item, index) => (
+          <li key={index}>
+            {item.nome} - Quantidade: {item.quantidade}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default Carrinho;

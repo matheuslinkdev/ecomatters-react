@@ -4,8 +4,8 @@ import Produtos from "../../Componentes/Produtos";
 const TelaLoja = () => {
   return (
     <main>
-      <Link to="/carrinho">Carrinho</Link>
-      <Produtos />
+        <Link to="/carrinho">Carrinho</Link>
+        <Produtos />
     </main>
   );
 };

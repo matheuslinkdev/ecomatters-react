@@ -1,11 +1,11 @@
-import Carrinho from "../../Componentes/Carrinho"
+import Carrinho from "../../Componentes/Carrinho";
 
 const TelaCarrinho = () => {
   return (
     <main>
-      <Carrinho/>
+        <Carrinho />
     </main>
-  )
-}
+  );
+};
 
-export default TelaCarrinho
+export default TelaCarrinho;

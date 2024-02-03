@@ -33,8 +33,8 @@ export const CarrinhoProvider = ({ children }) => {
   );
 };
 
-export const UseCarrinho = () => {
-  const context = useContext(CarrinhoProvider);
+export const useCarrinho = () => {
+  const context = useContext(CarrinhoContext);
   if (!context) {
     throw new Error("UseCarrinho deve ser usado com o CarrinhoProvider");
   }

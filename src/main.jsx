@@ -7,8 +7,8 @@ import PlanosPage from "./Pages/PlanosPage/index";
 import SobrePage from "./Pages/Sobre/index";
 import TelaLoja from "./Pages/TelaLoja";
 import DetalheProduto from "./Componentes/DetalhesProduto";
-import App from "./App";
 import TelaCarrinho from "./Pages/TelaCarrinho";
+import { CarrinhoProvider } from "./Contexts/CarrinhoContext";
 
 const router = createBrowserRouter([
   {
@@ -33,16 +33,18 @@ const router = createBrowserRouter([
   },
   {
     path: "/loja/:id/",
-    element: <DetalheProduto />
+    element: <DetalheProduto />,
   },
   {
     path: "/carrinho",
-    element: <TelaCarrinho/>
-  }
+    element: <TelaCarrinho />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CarrinhoProvider>
+      <RouterProvider router={router} />
+    </CarrinhoProvider>
   </React.StrictMode>
 );
