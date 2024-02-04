@@ -26,8 +26,15 @@ export const CarrinhoProvider = ({ children }) => {
     }
   };
 
+  const removerDoCarrinho = (itemId) => {
+    const novoCarrinho = carrinho.filter((item) => item.id !== itemId);
+    setCarrinho(novoCarrinho);
+  };
+
   return (
-    <CarrinhoContext.Provider value={{ carrinho, adicionarAoCarrinho }}>
+    <CarrinhoContext.Provider
+      value={{ carrinho, adicionarAoCarrinho, removerDoCarrinho }}
+    >
       {children}
     </CarrinhoContext.Provider>
   );

@@ -1,6 +1,6 @@
 const BotaoRemover = ({handleRemoverProduto}) => {
   return (
-    <button>Remover</button>
+    <button onClick={handleRemoverProduto}>Remover</button>
   )
 }
 

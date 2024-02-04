@@ -10,10 +10,10 @@ const Produtos = () => {
   const [quantidade, setQuantidade] = useState(1);
 
   const handleQuantidadeChange = (novaQuantidade) => {
-    setQuantidade(novaQuantidade);
+   setQuantidade(novaQuantidade);
   };
 
-  const handleAdicionarAoCarrinho = (produto, quantidade) => {
+  const handleAdicionarAoCarrinho = (produto) => {
     const produtoSelecionado = {
       nome: produto.nome,
       preco: produto.precoReal,

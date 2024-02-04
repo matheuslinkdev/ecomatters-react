@@ -2,7 +2,11 @@ import { useCarrinho } from "../../Contexts/CarrinhoContext";
 import BotaoRemover from "./BotaoRemover";
 
 const Carrinho = () => {
-  const { carrinho } = useCarrinho();
+  const { carrinho, removerDoCarrinho } = useCarrinho();
+
+  const handleRemoverProduto =(id)=>{
+    removerDoCarrinho(id)
+  }
 
   return (
     <div>
@@ -11,7 +15,7 @@ const Carrinho = () => {
         {carrinho.map((item, index) => (
           <li key={index}>
             {item.nome} - Quantidade: {item.quantidade}
-            <BotaoRemover handleRemoverProduto={handleRemoverProduto}/>
+            <BotaoRemover handleRemoverProduto={()=> {handleRemoverProduto(item.id)}}/>
           </li>
         ))}
       </ul>
