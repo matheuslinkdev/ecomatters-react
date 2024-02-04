@@ -1,4 +1,5 @@
 import { useCarrinho } from "../../Contexts/CarrinhoContext";
+import BotaoRemover from "./BotaoRemover";
 
 const Carrinho = () => {
   const { carrinho } = useCarrinho();
@@ -10,6 +11,7 @@ const Carrinho = () => {
         {carrinho.map((item, index) => (
           <li key={index}>
             {item.nome} - Quantidade: {item.quantidade}
+            <BotaoRemover handleRemoverProduto={handleRemoverProduto}/>
           </li>
         ))}
       </ul>
