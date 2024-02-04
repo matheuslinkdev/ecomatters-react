@@ -14,7 +14,7 @@ const Carrinho = () => {
       <ul>
         {carrinho.map((item, index) => (
           <li key={index}>
-            {item.nome} - Quantidade: {item.quantidade}
+            {item.nome} - Quantidade: 1
             <BotaoRemover handleRemoverProduto={()=> {handleRemoverProduto(item.id)}}/>
           </li>
         ))}

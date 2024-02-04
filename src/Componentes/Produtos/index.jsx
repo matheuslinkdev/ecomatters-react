@@ -7,20 +7,20 @@ import { produtos } from "./data/produtos";
 const Produtos = () => {
   const { adicionarAoCarrinho } = useCarrinho();
 
-  const [quantidade, setQuantidade] = useState(1);
+  //const [quantidade, setQuantidade] = useState(1);
 
-  const handleQuantidadeChange = (novaQuantidade) => {
-   setQuantidade(novaQuantidade);
-  };
+  //const handleQuantidadeChange = (novaQuantidade) => {
+   //setQuantidade(novaQuantidade);
+  //};
 
   const handleAdicionarAoCarrinho = (produto) => {
     const produtoSelecionado = {
       nome: produto.nome,
       preco: produto.precoReal,
-      quantidade: quantidade,
+      //quantidade: quantidade,
     };
     adicionarAoCarrinho(produtoSelecionado);
-    setQuantidade(1);
+    //setQuantidade(1);
     console.log("Produto adicionado ao carrinho:", produtoSelecionado);
   };
 
@@ -37,13 +37,13 @@ const Produtos = () => {
                 <h1>{produto.nome}</h1>
                 <h2>{produto.precoReal}</h2>
                 <DropdownQuantidade
-                  quantidade={quantidade}
-                  onChange={handleQuantidadeChange}
+                  //quantidade={quantidade}
+                  //onChange={handleQuantidadeChange}
                 />
                 <BotaoAdicionarCarrinho
                   produto={produto}
                   handleAdicionarAoCarrinho={() =>
-                    handleAdicionarAoCarrinho(produto, quantidade)
+                    handleAdicionarAoCarrinho(produto) //quantidade//)
                   }
                 />
               </section>

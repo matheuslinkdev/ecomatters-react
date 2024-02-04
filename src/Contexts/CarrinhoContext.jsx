@@ -5,23 +5,28 @@ const CarrinhoContext = createContext();
 export const CarrinhoProvider = ({ children }) => {
   const [carrinho, setCarrinho] = useState([]);
 
-  const adicionarAoCarrinho = (item) => {
+  const adicionarAoCarrinho = (produto) => {
     const itemNoCarrinho = carrinho.find(
-      (itemCarrinho) => itemCarrinho.id === item.id
+      (itemCarrinho) => itemCarrinho.nome === produto.nome
     );
 
     if (itemNoCarrinho) {
       setCarrinho((prevCarrinho) =>
-        prevCarrinho.map((itemCarrinho) =>
-          itemCarrinho.id === item.id
-            ? { ...itemNoCarrinho, quantidade: itemCarrinho.quantidade + 1 }
-            : itemCarrinho
+        prevCarrinho.map((itemCarrinho) => {
+        const novoCarrinho = [...prevCarrinho, itemCarrinho];
+        localStorage.setItem("carrinho", JSON.stringify(novoCarrinho))
+        //   itemCarrinho.id === item.id
+        //     ? { ...itemNoCarrinho, quantidade: itemCarrinho.quantidade + 1 }
+        //     : itemCarrinho
+        // 
+        return novoCarrinho
+        }
         )
       );
     } else {
       setCarrinho((prevCarrinho) => [
         ...prevCarrinho,
-        { ...item, quantidade: 1 },
+        { ...produto, quantidade: 1 },
       ]);
     }
   };
