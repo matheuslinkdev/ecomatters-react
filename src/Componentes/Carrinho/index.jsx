@@ -4,18 +4,23 @@ import BotaoRemover from "./BotaoRemover";
 const Carrinho = () => {
   const { carrinho, removerDoCarrinho } = useCarrinho();
 
-  const handleRemoverProduto =(id)=>{
-    removerDoCarrinho(id)
-  }
+  const handleRemoverProduto = (id) => {
+    removerDoCarrinho(id);
+  };
 
   return (
     <div>
       <h2>Carrinho de Compras</h2>
       <ul>
-        {carrinho.map((item, index) => (
+        {carrinho.map((produto, index) => (
           <li key={index}>
-            {item.nome} - Quantidade: 1
-            <BotaoRemover handleRemoverProduto={()=> {handleRemoverProduto(item.id)}}/>
+            <h2>{produto.nome}</h2>
+            <h4> Quantidade: {produto.quantidade}</h4>
+            <BotaoRemover
+              handleRemoverProduto={() => {
+                handleRemoverProduto(produto.nome);
+              }}
+            />
           </li>
         ))}
       </ul>

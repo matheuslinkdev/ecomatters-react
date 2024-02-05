@@ -6,33 +6,25 @@ export const CarrinhoProvider = ({ children }) => {
   const [carrinho, setCarrinho] = useState([]);
 
   const adicionarAoCarrinho = (produto) => {
-    const itemNoCarrinho = carrinho.find(
-      (itemCarrinho) => itemCarrinho.nome === produto.nome
+    const produtoNoCarrinho = carrinho.find(
+      (produtoCarrinho) => produtoCarrinho.nome === produto.nome
     );
 
-    if (itemNoCarrinho) {
-      setCarrinho((prevCarrinho) =>
-        prevCarrinho.map((itemCarrinho) => {
-        const novoCarrinho = [...prevCarrinho, itemCarrinho];
-        localStorage.setItem("carrinho", JSON.stringify(novoCarrinho))
-        //   itemCarrinho.id === item.id
-        //     ? { ...itemNoCarrinho, quantidade: itemCarrinho.quantidade + 1 }
-        //     : itemCarrinho
-        // 
-        return novoCarrinho
-        }
-        )
-      );
+    if (produtoNoCarrinho) {
+      alert(`O produto ${produto.nome} já está no carrinho.`);
+      return;
     } else {
       setCarrinho((prevCarrinho) => [
         ...prevCarrinho,
-        { ...produto, quantidade: 1 },
+        { ...produto, quantidade: produto.quantidade },
       ]);
     }
   };
 
-  const removerDoCarrinho = (itemId) => {
-    const novoCarrinho = carrinho.filter((item) => item.id !== itemId);
+  const removerDoCarrinho = (produtoNome) => {
+    const novoCarrinho = carrinho.filter(
+      (produto) => produto.nome !== produtoNome
+    );
     setCarrinho(novoCarrinho);
   };
 
