@@ -1,4 +1,5 @@
 import { useCarrinho } from "../../Contexts/CarrinhoContext";
+import AlterarQuantidade from "./AlterarQuantidade";
 import BotaoRemover from "./BotaoRemover";
 
 const Carrinho = () => {
@@ -20,6 +21,7 @@ const Carrinho = () => {
               <h2>{produto.nome}</h2>
               <span>{produto.descricao}</span>
               <h4> Preço: R$ {produto.preco}</h4>
+              <AlterarQuantidade/>
               <BotaoRemover
                 handleRemoverProduto={() => {
                   handleRemoverProduto(produto.nome);
