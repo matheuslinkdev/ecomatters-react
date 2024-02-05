@@ -15,7 +15,7 @@ const Carrinho = () => {
         {carrinho.map((produto, index) => (
           <li key={index}>
             <h2>{produto.nome}</h2>
-            <h4> Quantidade: {produto.quantidade}</h4>
+            <h4> Preço: R$ {produto.preco}</h4>
             <BotaoRemover
               handleRemoverProduto={() => {
                 handleRemoverProduto(produto.nome);

@@ -1,7 +1,7 @@
-const BotaoAdicionarCarrinho = ({handleAdicionarAoCarrinho, quantidade}) => {
+const BotaoAdicionarCarrinho = ({handleAdicionarAoCarrinho}) => {
 
   return (
-    <button onClick={(e)=>{ e.preventDefault(); handleAdicionarAoCarrinho(quantidade)}}>Adicionar ao Carrinho</button>
+    <button onClick={(e)=>{ e.preventDefault(); handleAdicionarAoCarrinho()}}>Adicionar ao Carrinho</button>
   )
 }
 

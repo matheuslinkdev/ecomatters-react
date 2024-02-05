@@ -16,7 +16,7 @@ export const CarrinhoProvider = ({ children }) => {
     } else {
       setCarrinho((prevCarrinho) => [
         ...prevCarrinho,
-        { ...produto, quantidade: produto.quantidade },
+        { ...produto},
       ]);
     }
   };
