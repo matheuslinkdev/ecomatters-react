@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useCarrinho } from "../../Contexts/CarrinhoContext";
 import BotaoAdicionarCarrinho from "./BotaoAddCarrinho";
 import { produtos } from "./data/produtos";
@@ -9,7 +8,8 @@ const Produtos = () => {
   const handleAdicionarAoCarrinho = (produto) => {
     const produtoSelecionado = {
       nome: produto.nome,
-      preco: produto.precoReal,
+      descricao: produto.descricao,
+      preco: produto.precoReal
     };
     adicionarAoCarrinho(produtoSelecionado);
     console.log("Produto adicionado ao carrinho:", produtoSelecionado);
@@ -19,7 +19,6 @@ const Produtos = () => {
     <>
       <main>
         <h1>Produtos</h1>
-
         <article>
           {produtos.map((produto, index) => {
             return (

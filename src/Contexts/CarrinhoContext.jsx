@@ -1,9 +1,16 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const CarrinhoContext = createContext();
 
 export const CarrinhoProvider = ({ children }) => {
   const [carrinho, setCarrinho] = useState([]);
+  const [dadosCarregados, setDadosCarregados] = useState(false);
+
+  useEffect(() => {
+    const carrinhoSalvo = JSON.parse(localStorage.getItem("carrinho")) || [];
+    setCarrinho(carrinhoSalvo);
+    setDadosCarregados(true);
+  }, []);
 
   const adicionarAoCarrinho = (produto) => {
     const produtoNoCarrinho = carrinho.find(
@@ -14,10 +21,9 @@ export const CarrinhoProvider = ({ children }) => {
       alert(`O produto ${produto.nome} já está no carrinho.`);
       return;
     } else {
-      setCarrinho((prevCarrinho) => [
-        ...prevCarrinho,
-        { ...produto},
-      ]);
+      const novoCarrinho = [...carrinho, produto];
+      localStorage.setItem("carrinho", JSON.stringify(novoCarrinho));
+      setCarrinho(novoCarrinho);
     }
   };
 
@@ -25,6 +31,7 @@ export const CarrinhoProvider = ({ children }) => {
     const novoCarrinho = carrinho.filter(
       (produto) => produto.nome !== produtoNome
     );
+    localStorage.setItem("carrinho", JSON.stringify(novoCarrinho));
     setCarrinho(novoCarrinho);
   };
 
@@ -32,7 +39,7 @@ export const CarrinhoProvider = ({ children }) => {
     <CarrinhoContext.Provider
       value={{ carrinho, adicionarAoCarrinho, removerDoCarrinho }}
     >
-      {children}
+      {dadosCarregados && children}
     </CarrinhoContext.Provider>
   );
 };
