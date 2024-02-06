@@ -1,5 +1,6 @@
 import { useCarrinho } from "../../Contexts/CarrinhoContext";
 import BotaoRemover from "./BotaoRemover";
+import Voltar from './../Voltar/index';
 
 const Carrinho = () => {
   const { carrinho, removerDoCarrinho } = useCarrinho();
@@ -18,6 +19,7 @@ const calcularValorTotal = () => {
 
   return (
     <main>
+      <Voltar rotaDestino="/loja"/>
       <h2>Carrinho de Compras</h2>
       {carrinho.length > 0 ? (
         <>
@@ -36,7 +38,7 @@ const calcularValorTotal = () => {
               </li>
             ))}
           </ul>
-          <p>Valor Total: R${calcularValorTotal()}</p>
+          <p>Valor Total: {calcularValorTotal()}</p>
         </>
       ) : (
         <section>
