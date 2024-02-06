@@ -6,7 +6,6 @@ import React from "react";
 import PlanosPage from "./Pages/PlanosPage/index";
 import SobrePage from "./Pages/Sobre/index";
 import TelaLoja from "./Pages/TelaLoja";
-import DetalheProduto from "./Componentes/DetalhesProduto";
 import TelaCarrinho from "./Pages/TelaCarrinho";
 import { CarrinhoProvider } from "./Contexts/CarrinhoContext";
 
@@ -30,10 +29,6 @@ const router = createBrowserRouter([
   {
     path: "/loja",
     element: <TelaLoja />,
-  },
-  {
-    path: "/loja/:id/",
-    element: <DetalheProduto />,
   },
   {
     path: "/carrinho",

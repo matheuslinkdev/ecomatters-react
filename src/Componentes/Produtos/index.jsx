@@ -3,6 +3,7 @@ import AlterarQuantidade from "../Carrinho/AlterarQuantidade";
 import Voltar from "../Voltar";
 import BotaoAdicionarCarrinho from "./BotaoAddCarrinho";
 import { produtos } from "./data/produtos";
+import "./style.scss";
 
 const Produtos = () => {
   const { adicionarAoCarrinho } = useCarrinho();

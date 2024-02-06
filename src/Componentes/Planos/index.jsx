@@ -1,6 +1,7 @@
 import Voltar from "../Voltar";
 import BotaoAssinar from "./BotaoAssinar";
 import { planos } from "./data/planos";
+import "./style.scss";
 
 const Planos = () => {
   return (

@@ -1,6 +1,7 @@
 import { useCarrinho } from "../../Contexts/CarrinhoContext";
 import BotaoRemover from "./BotaoRemover";
 import Voltar from './../Voltar/index';
+import "./style.scss";
 
 const Carrinho = () => {
   const { carrinho, removerDoCarrinho } = useCarrinho();

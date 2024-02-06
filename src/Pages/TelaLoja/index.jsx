@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Produtos from "../../Componentes/Produtos";
+import "./style.scss";
 
 const TelaLoja = () => {
   return (

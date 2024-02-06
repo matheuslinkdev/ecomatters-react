@@ -1,4 +1,5 @@
 import Voltar from "../Voltar";
+import "./style.scss";
 
 const Sobre = () => {
   return (
