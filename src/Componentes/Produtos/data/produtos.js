@@ -2,9 +2,10 @@ export const produtos = [
   {
     nome: "Bloco de Notas Ecológico",
     precoReal: 32.99,
-    descricao: "Bloco de notas com composição de papéis reciclados ",
+    descricao: "Bloco de notas com composição de papéis reciclados",
     imagem: "",
     disponivel: true,
+    quantidade: 0,
   },
   {
     nome: "Luminária LED Solar",
@@ -12,6 +13,7 @@ export const produtos = [
     descricao: "Luz de LED alimentada por energia solar",
     imagem: "",
     disponivel: true,
+    quantidade: 0,
   },
   {
     nome: "Garrafa Térmica",
@@ -19,13 +21,16 @@ export const produtos = [
     descricao: "Garrafa térmica feita com materiais reaproveitados",
     imagem: "",
     disponivel: true,
+    quantidade: 0,
   },
   {
     nome: "Spray aromatizador",
     precoReal: 16.99,
-    descricao: "Spray aromatizador, com embalagem e ingredientes que não prejudicam a natureza",
+    descricao:
+      "Spray aromatizador, com embalagem e ingredientes que não prejudicam a natureza",
     imagem: "",
     disponivel: true,
+    quantidade: 0,
   },
   {
     nome: "Sacola Biodegradável",
@@ -33,6 +38,7 @@ export const produtos = [
     descricao: "Sacola composta de algas",
     imagem: "",
     disponivel: true,
+    quantidade: 0,
   },
   {
     nome: "Prato Biodegradável",
@@ -40,6 +46,7 @@ export const produtos = [
     descricao: "Um prato feito de materiais reciclados",
     imagem: "",
     disponivel: true,
+    quantidade: 0,
   },
   {
     nome: "Cotonete",
@@ -47,6 +54,7 @@ export const produtos = [
     descricao: "Jogo de 40 cotonetes feitos com materiais reciclados",
     imagem: "",
     disponivel: true,
+    quantidade: 0,
   },
   {
     nome: "Copos de Papel (Pacote com 30 Unidades)",
@@ -54,13 +62,15 @@ export const produtos = [
     descricao: "Copo de papel compostável (pacote com 30 unidades)",
     imagem: "",
     disponivel: true,
+    quantidade: 0,
   },
   {
     nome: "Talheres Compostáveis",
     precoReal: 5.99,
-    descricao: "Um jogo de talheres (garfo, faca e colher). ",
+    descricao: "Um jogo de talheres (garfo, faca e colher)",
     imagem: "",
     disponivel: true,
+    quantidade: 0,
   },
   {
     nome: "Sacolas de Papel",
@@ -68,5 +78,6 @@ export const produtos = [
     descricao: "Sacos de papel (pacote com 10 unidades)",
     imagem: "",
     disponivel: true,
+    quantidade: 0,
   },
 ];

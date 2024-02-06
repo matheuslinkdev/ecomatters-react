@@ -13,6 +13,10 @@ export const CarrinhoProvider = ({ children }) => {
   }, []);
 
   const adicionarAoCarrinho = (produto) => {
+    if(produto.quantidade === 0){
+      alert("Você deve adicionar uma quantidade diferete de 0")
+      return;
+    } 
     const produtoNoCarrinho = carrinho.find(
       (produtoCarrinho) => produtoCarrinho.nome === produto.nome
     );

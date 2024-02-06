@@ -1,15 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const AlterarQuantidade = () => {
-  const [quantidade, setQuantidade] = useState(1);
+const AlterarQuantidade = ({ quantidade, onQuantidadeChange }) => {
+  const [quant, setQuant] = useState(quantidade);
+
+  useEffect(() => {
+    setQuant(quantidade);
+  }, [quantidade]);
 
   const handleDiminuirQuantidade = () => {
-    setQuantidade((quant) => (quant > 1 ? quant - 1 : quant));
+    setQuant((quantidade) => (quantidade > 1 ? quantidade - 1 : quantidade));
   };
 
   const handleAumentarQuantidade = () => {
-    setQuantidade((quant) => (quant < 20 ? quant + 1 : quant));
+    setQuant((quantidade) => (quantidade <= 19 ? quantidade + 1 : quantidade));
   };
+
+  useEffect(() => {
+    onQuantidadeChange(quant);
+  }, [quant, onQuantidadeChange]);
 
   return (
     <article>
@@ -22,7 +30,7 @@ const AlterarQuantidade = () => {
         >
           -
         </button>
-        <h5>{quantidade}</h5>
+        <h5>{quant}</h5>
         <button
           onClick={(e) => {
             e.preventDefault();
