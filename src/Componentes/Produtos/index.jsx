@@ -1,5 +1,6 @@
 import { useCarrinho } from "../../Contexts/CarrinhoContext";
 import AlterarQuantidade from "../Carrinho/AlterarQuantidade";
+import Voltar from "../Voltar";
 import BotaoAdicionarCarrinho from "./BotaoAddCarrinho";
 import { produtos } from "./data/produtos";
 
@@ -28,6 +29,7 @@ const Produtos = () => {
   return (
     <>
       <main>
+        <Voltar rotaDestino="/home"/>
         <h1>Produtos</h1>
         <article>
           {produtos.map((produto, index) => (

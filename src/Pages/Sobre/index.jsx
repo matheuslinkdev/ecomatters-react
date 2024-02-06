@@ -1,9 +1,9 @@
-import TextosSobre from "../../Componentes/TextosSobre"
+import Sobre from "../../Componentes/Sobre"
 
 const SobrePage = () => {
   return (
     <main>
-      <TextosSobre/>
+      <Sobre/>
     </main>
   )
 }

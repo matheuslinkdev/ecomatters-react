@@ -1,9 +1,11 @@
+import Voltar from "../Voltar";
 import BotaoAssinar from "./BotaoAssinar";
 import { planos } from "./data/planos";
 
 const Planos = () => {
   return (
     <main>
+      <Voltar rotaDestino="/home" />
       <h1>Planos</h1>
       <article>
         {planos.map((plano, index) => {
@@ -23,7 +25,7 @@ const Planos = () => {
                 <h4>R${plano.precoAnual}</h4>
                 <span>Anual</span>
               </div>
-              <BotaoAssinar/>
+              <BotaoAssinar />
             </section>
           );
         })}
