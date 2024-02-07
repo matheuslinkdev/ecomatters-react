@@ -4,9 +4,12 @@ import "./style.scss";
 const SobrePage = () => {
   return (
     <main>
-      <Sobre/>
+      <div className="nome-pagina">
+        <h1>Sobre</h1>
+      </div>
+      <Sobre />
     </main>
-  )
+  );
 }
 
 export default SobrePage

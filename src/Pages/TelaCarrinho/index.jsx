@@ -4,7 +4,10 @@ import "./style.scss";
 const TelaCarrinho = () => {
   return (
     <main>
-        <Carrinho />
+      <div className="nome-pagina">
+        <h1>Carrinho</h1>
+      </div>
+      <Carrinho />
     </main>
   );
 };

@@ -4,9 +4,12 @@ import "./style.scss";
 const PlanosPage = () => {
   return (
     <main>
-      <Planos/>
+      <div className="nome-pagina">
+        <h1>Planos</h1>
+      </div>
+      <Planos />
     </main>
-  )
+  );
 }
 
 export default PlanosPage

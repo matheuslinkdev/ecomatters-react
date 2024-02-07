@@ -4,7 +4,6 @@ import './style.scss'
 const TextosHome = () => {
   return (
     <>
-    <h1>Home</h1>
     <article className="lista-textos-home">
       <section>
         <p>{texto1}</p>

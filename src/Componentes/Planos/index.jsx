@@ -7,7 +7,6 @@ const Planos = () => {
   return (
     <main>
       <Voltar rotaDestino="/home" />
-      <h1>Planos</h1>
       <article>
         {planos.map((plano, index) => {
           return (

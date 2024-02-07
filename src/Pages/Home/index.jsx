@@ -5,10 +5,13 @@ import './style.scss'
 const HomePage = () => {
   return (
     <main>
-      <TextosHome/>
-      <CaixasRedirecionamento/>
+      <div className="nome-pagina">
+        <h1>Home</h1>
+      </div>
+      <TextosHome />
+      <CaixasRedirecionamento />
     </main>
-  )
+  );
 }
 
 export default HomePage

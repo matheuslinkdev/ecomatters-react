@@ -21,7 +21,6 @@ const calcularValorTotal = () => {
   return (
     <main>
       <Voltar rotaDestino="/loja"/>
-      <h2>Carrinho de Compras</h2>
       {carrinho.length > 0 ? (
         <>
           <ul>

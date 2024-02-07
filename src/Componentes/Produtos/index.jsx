@@ -31,7 +31,6 @@ const Produtos = () => {
     <>
       <main className="main-produtos">
         <Voltar rotaDestino="/home" />
-        <h1>Produtos</h1>
         <article className="lista-produtos">
           {produtos.map((produto, index) => (
             <section key={index} className="produto">
