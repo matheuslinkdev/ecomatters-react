@@ -1,1 +1,36 @@
 @import "../../styles/variaveis.scss";
+
+.lista-caixas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 15dvh auto;
+}
+
+.lista-caixas > section {
+    background-image: url("../../imgs/blob-scene-haikei\ \(1\).svg");
+    object-fit: cover;
+  width: 250px;
+  height: 100px;
+  margin: auto 5dvw;
+  background-color: $verde-05;
+  position: relative;
+  border-radius: 5px;
+}
+
+.lista-caixas>section>p{
+    color: $branco;
+    padding: 5px;
+    position: absolute;
+    bottom: 5px;
+    filter: drop-shadow(0 2px 2px $verde-06);
+}
+
+.link-redirecionamento{
+    font-size: 1.3rem;
+    color: $branco;
+    font-weight: $bold;
+    padding: 5px;
+}
