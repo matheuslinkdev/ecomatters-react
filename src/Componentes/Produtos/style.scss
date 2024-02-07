@@ -1,1 +1,92 @@
 @import "../../styles/variaveis.scss";
+
+.lista-produtos {
+  max-width: 90dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 5dvh auto;
+}
+
+.produto {
+  width: 300px;
+  max-width: 70dvw;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: $verde-07;
+  border-radius: 10px;
+  position: relative;
+}
+
+.produto > img {
+  width: 30%;
+  height: 20%;
+  overflow: visible;
+  object-fit: cover;
+  margin-top: 4dvh;
+}
+
+.informacoes-produto {
+  margin-top: 3dvh;
+}
+
+.informacoes-produto > h1 {
+  color: $verde-02;
+  font-size: 1.5rem;
+  margin: 2dvh auto;
+}
+
+.informacoes-produto > span {
+  color: $branco;
+}
+
+.informacoes-produto > h2 {
+  color: $branco;
+  text-decoration: underline;
+  margin-top: 3dvh;
+}
+
+.botoes-alterar-quantidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes-alterar-quantidade>button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: $verde-03;
+}
+
+.quantidade{
+    font-size: 1.3rem;
+    color: $branco;
+}
+
+.btn-adicionar-carrinho {
+    position: absolute;
+    bottom: 10px;
+  background-color: $verde-01;
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+  height: 30px;
+  font-size: 1.1rem;
+  font-weight: $bold;
+  color: $verde-05;
+  transition: linear .3s;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $verde-03;
+    color: $preto-verde;
+  }
+}

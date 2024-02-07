@@ -21,7 +21,7 @@ const AlterarQuantidade = ({ quantidade, onQuantidadeChange }) => {
 
   return (
     <article>
-      <section style={{ display: "flex" }}>
+      <section className="botoes-alterar-quantidade">
         <button
           onClick={(e) => {
             e.preventDefault();
@@ -30,7 +30,7 @@ const AlterarQuantidade = ({ quantidade, onQuantidadeChange }) => {
         >
           -
         </button>
-        <h5>{quant}</h5>
+        <h5 className="quantidade">{quant}</h5>
         <button
           onClick={(e) => {
             e.preventDefault();

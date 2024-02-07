@@ -29,16 +29,18 @@ const Produtos = () => {
 
   return (
     <>
-      <main>
-        <Voltar rotaDestino="/home"/>
+      <main className="main-produtos">
+        <Voltar rotaDestino="/home" />
         <h1>Produtos</h1>
-        <article>
+        <article className="lista-produtos">
           {produtos.map((produto, index) => (
-            <section key={index}>
-              <img src="" alt="" />
-              <h1>{produto.nome}</h1>
-              <span>{produto.descricao}</span>
-              <h2>R$ {produto.precoReal}</h2>
+            <section key={index} className="produto">
+              <img src={produto.imagem} alt={produto.nome} />
+              <div className="informacoes-produto">
+                <h1>{produto.nome}</h1>
+                <span>{produto.descricao}</span>
+                <h2>R$ {produto.precoReal}</h2>
+              </div>
               <AlterarQuantidade
                 quantidade={produto.quantidade}
                 onQuantidadeChange={(novaQuantidade) =>

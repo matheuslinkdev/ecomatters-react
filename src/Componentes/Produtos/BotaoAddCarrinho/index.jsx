@@ -1,8 +1,15 @@
-const BotaoAdicionarCarrinho = ({handleAdicionarAoCarrinho}) => {
-
+const BotaoAdicionarCarrinho = ({ handleAdicionarAoCarrinho }) => {
   return (
-    <button onClick={(e)=>{ e.preventDefault(); handleAdicionarAoCarrinho()}}>Adicionar ao Carrinho</button>
-  )
-}
+    <button
+      onClick={(e) => {
+        e.preventDefault();
+        handleAdicionarAoCarrinho();
+      }}
+      className="btn-adicionar-carrinho"
+    >
+      Adicionar ao Carrinho
+    </button>
+  );
+};
 
-export default BotaoAdicionarCarrinho
+export default BotaoAdicionarCarrinho;
