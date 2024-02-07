@@ -41,8 +41,8 @@ const calcularValorTotal = () => {
           <p>Valor Total: {calcularValorTotal()}</p>
         </>
       ) : (
-        <section>
-          <p>O carrinho está vazio.</p>
+        <section className="msg-carrinho-vazio">
+          <p>O seu carrinho está vazio, adicione itens nele para vê-los aqui.</p>
         </section>
       )}
     </main>

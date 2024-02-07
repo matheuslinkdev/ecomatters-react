@@ -4,7 +4,7 @@ import "./style.scss";
 const Voltar = ({rotaDestino}) => {
   return (
     <section>
-        <Link to={rotaDestino}>
+        <Link to={rotaDestino} className='link-retorno'>
             ↩Voltar
         </Link>
     </section>

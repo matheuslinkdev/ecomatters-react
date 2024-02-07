@@ -12,6 +12,22 @@ body {
   background-size: cover;
 }
 
+.link-retorno {
+  color: $verde-05;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: linear 0.3s;
+  border-bottom: 1px solid $verde-05;
+  position: absolute;
+  top: 55px;
+  left: 15px;
+
+  &:hover {
+    color: $verde-07;
+    border-bottom: 1px solid $verde-07;
+  }
+}
+
 .nome-pagina {
   display: flex;
   justify-content: center;
@@ -20,6 +36,6 @@ body {
 
 .nome-pagina > h1 {
   position: absolute;
-  top: 50px;
+  top: 60px;
   color: $verde-06;
 }
