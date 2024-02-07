@@ -14,17 +14,13 @@ const Produtos = () => {
 
   const handleAdicionarAoCarrinho = (produto) => {
     const produtoSelecionado = {
+      imagem: produto.imagem,
       nome: produto.nome,
       descricao: produto.descricao,
       preco: produto.precoReal,
       quantidade: produto.quantidade,
     };
     adicionarAoCarrinho(produtoSelecionado);
-    console.log(
-      "Produto adicionado ao carrinho:",
-      produto.nome,
-      produto.quantidade
-    );
   };
 
   return (

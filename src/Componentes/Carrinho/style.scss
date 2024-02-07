@@ -19,3 +19,29 @@
   font-size: 1.3rem;
   padding: 10px;
 }
+
+.botao-remover {
+  position: absolute;
+  bottom: 10px;
+  background-color: $preto-verde;
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+  height: 30px;
+  font-size: 1.1rem;
+  font-weight: $bold;
+  color: $branco;
+  transition: linear 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $preto-01;
+    color: $verde-03;
+    border-radius: 15px;
+  }
+}
+
+.numero-carrinho{
+  position: absolute;
+  bottom: 50px;
+}
