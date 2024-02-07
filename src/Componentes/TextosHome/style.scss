@@ -1,0 +1,21 @@
+@import "../../styles/variaveis.scss";
+
+.lista-textos-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10dvh;
+}
+
+.lista-textos-home > section {
+  width: 400px;
+  max-width: 70dvw;
+  margin: 3dvh 10dvw;
+}
+
+.lista-textos-home>section>p{
+    font-size: 1.1rem;
+    font-weight: $bold;
+    color: $marrom;
+}
