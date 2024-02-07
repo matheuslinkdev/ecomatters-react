@@ -20,27 +20,27 @@ const AlterarQuantidade = ({ quantidade, onQuantidadeChange }) => {
   }, [quant, onQuantidadeChange]);
 
   return (
-    <article>
-      <section className="botoes-alterar-quantidade">
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            handleDiminuirQuantidade();
-          }}
-        >
-          -
-        </button>
-        <h5 className="quantidade">{quant}</h5>
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            handleAumentarQuantidade();
-          }}
-        >
-          +
-        </button>
-      </section>
-    </article>
+    <section className="botoes-alterar-quantidade">
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+          handleDiminuirQuantidade();
+        }}
+        className="botao-quantidade"
+      >
+        <span>-</span>
+      </button>
+      <h5 className="quantidade">{quant}</h5>
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+          handleAumentarQuantidade();
+        }}
+        className="botao-quantidade"
+      >
+        <span>+</span>
+      </button>
+    </section>
   );
 };
 
