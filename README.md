@@ -10,5 +10,5 @@
 
 ### Logo o projeto estará finalizado, mais cheio e mias bonito, futuramente pretendo implementar mais algumas funcionalidades legais, como cadastro, login, também a renderização de nome e quem sabe uma foto do usuário cadastrado.
 
-## podes acessar a página [AQUI](https://mthslnk-gthb.github.io/home)
+## podes acessar a página [AQUI](https://mthslnk-gthb.github.io/ecomatters-react/)
 
