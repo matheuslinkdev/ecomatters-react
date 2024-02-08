@@ -8,6 +8,7 @@ import SobrePage from "./Pages/Sobre/index";
 import TelaLoja from "./Pages/TelaLoja";
 import TelaCarrinho from "./Pages/TelaCarrinho";
 import { CarrinhoProvider } from "./Contexts/CarrinhoContext";
+import TelaCompra from "./Pages/TelaCompra";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/carrinho",
     element: <TelaCarrinho />,
+  },
+  {
+    path: "/compra",
+    element: <TelaCompra />,
   },
 ]);
 

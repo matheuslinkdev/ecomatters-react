@@ -2,6 +2,7 @@ import { useCarrinho } from "../../Contexts/CarrinhoContext";
 import BotaoRemover from "./BotaoRemover";
 import Voltar from "./../Voltar/index";
 import "./style.scss";
+import { Link } from "react-router-dom";
 
 const Carrinho = () => {
   const { carrinho, removerDoCarrinho } = useCarrinho();
@@ -48,7 +49,13 @@ const Carrinho = () => {
               </section>
             </article>
           ))}
-          <p>Valor Total: {calcularValorTotal()}</p>
+          <section className="valor-total">
+            <p>Valor Total:</p>
+            <span>{calcularValorTotal()}</span>
+            <Link to="/compra">
+              <button className="btn-comprar">Comprar</button>
+            </Link>
+          </section>
         </>
       ) : (
         <section className="msg-carrinho-vazio">
