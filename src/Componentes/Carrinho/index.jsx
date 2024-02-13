@@ -52,7 +52,7 @@ const Carrinho = () => {
           <section className="valor-total">
             <p>Valor Total:</p>
             <span>{calcularValorTotal()}</span>
-            <Link to="/compra">
+            <Link to="/ecomatters-react/compra">
               <button className="btn-comprar">Comprar</button>
             </Link>
           </section>

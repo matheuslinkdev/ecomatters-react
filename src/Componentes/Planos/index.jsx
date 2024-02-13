@@ -6,7 +6,7 @@ import "./style.scss";
 const Planos = () => {
   return (
     <main>
-      <Voltar rotaDestino="/home" />
+      <Voltar rotaDestino="/ecomatters-react/home" />
       <article>
         {planos.map((plano, index) => {
           return (

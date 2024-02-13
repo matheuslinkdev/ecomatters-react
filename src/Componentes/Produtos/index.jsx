@@ -26,7 +26,7 @@ const Produtos = () => {
   return (
     <>
       <main className="main-produtos">
-        <Voltar rotaDestino="/home" />
+        <Voltar rotaDestino="/ecomatters-react/home" />
         <article className="lista-produtos">
           {produtos.map((produto, index) => (
             <section key={index} className="produto">

@@ -1,1 +1,28 @@
 @import "../../styles/variaveis.scss";
+
+.pag-textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textos-sobre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10dvh;
+  max-width: 90dvw;
+
+  > section {
+    width: 400px;
+    max-width: 85dvw;
+    margin: 3dvh 5dvw;
+    p {
+      font-size: 1.1rem;
+      font-weight: $bold;
+      color: $marrom;
+    }
+  }
+}
