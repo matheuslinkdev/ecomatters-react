@@ -5,18 +5,24 @@ const CaixasRedirecionamento = () => {
   return (
     <article className="lista-caixas">
       <section>
-        <Link to="/planos" className='link-redirecionamento'>Planos ↪</Link>
+        <Link to="/ecomatters-react/planos" className="link-redirecionamento">
+          Planos ↪
+        </Link>
         <p>Explore nossos planos, cada um contém uma série de benefícios.</p>
       </section>
       <section>
-        <Link to="/loja" className='link-redirecionamento'>Loja ↪</Link>
+        <Link to="/ecomatters-react/loja" className="link-redirecionamento">
+          Loja ↪
+        </Link>
         <p>
           Explore nossos produtos produzidos com foco no mínimo impacto
           ambiental.
         </p>
       </section>
       <section>
-        <Link to="/sobre" className='link-redirecionamento'>Sobre ↪</Link>
+        <Link to="/ecomatters-react/sobre" className="link-redirecionamento">
+          Sobre ↪
+        </Link>
         <p>Quem somos, por que existimos e quais nossos objetivos?</p>
       </section>
     </article>

@@ -6,7 +6,7 @@ const TelaCompra = () => {
   return (
     <main className="main-compra">
       <Header />
-      <Voltar rotaDestino="/carrinho" />
+      <Voltar rotaDestino="/ecomatters-react/carrinho" />
       <section className="nome-pagina">
         <h1>Tela de Compra</h1>
       </section>

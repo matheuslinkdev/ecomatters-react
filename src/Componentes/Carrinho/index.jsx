@@ -24,7 +24,7 @@ const Carrinho = () => {
 
   return (
     <main>
-      <Voltar rotaDestino="/loja" />
+      <Voltar rotaDestino="/ecomatters-react/loja" />
       {carrinho.length > 0 ? (
         <>
           {carrinho.map((produto, index) => (

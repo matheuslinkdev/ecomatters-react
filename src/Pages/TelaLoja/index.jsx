@@ -7,8 +7,8 @@ import iconCarrinho from '/src/imgs/icon-carrinho.png'
 const TelaLoja = () => {
   return (
     <main>
-      <Header/>
-      <Link to="/carrinho" className="link-carrinho">
+      <Header />
+      <Link to="/ecomatters-react/carrinho" className="link-carrinho">
         <img src={iconCarrinho} alt="" />
       </Link>
       <div className="nome-pagina">

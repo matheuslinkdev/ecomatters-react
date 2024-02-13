@@ -20,23 +20,23 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/planos",
+    path: "/ecomatters-react/planos",
     element: <PlanosPage />,
   },
   {
-    path: "/sobre",
+    path: "/ecomatters-react/sobre",
     element: <SobrePage />,
   },
   {
-    path: "/loja",
+    path: "/ecomatters-react/loja",
     element: <TelaLoja />,
   },
   {
-    path: "/carrinho",
+    path: "/ecomatters-react/carrinho",
     element: <TelaCarrinho />,
   },
   {
-    path: "/compra",
+    path: "/ecomatters-react/compra",
     element: <TelaCompra />,
   },
 ]);
