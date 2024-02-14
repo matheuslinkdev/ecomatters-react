@@ -1,6 +1,6 @@
 const BotaoAssinar = () => {
   return (
-    <button>Assinar</button>
+    <button className="botao-assinar">Assinar</button>
   )
 }
 

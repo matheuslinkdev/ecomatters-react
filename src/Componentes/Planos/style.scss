@@ -1,1 +1,103 @@
 @import "../../styles/variaveis.scss";
+
+.planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15dvh;
+
+  .card-plano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    max-width: 90%;
+    height: 400px;
+    background-image: radial-gradient($verde-05, $verde-06);
+    border-radius: 15px;
+    margin: 3dvh auto;
+    position: relative;
+    transition: linear 0.6s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .conteudo-plano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    position: absolute;
+    top: 30px;
+    color: $verde-01;
+    font-weight: 400;
+    font-size: 1.7rem;
+  }
+
+  ul {
+    position: absolute;
+    top: 90px;
+    margin: auto;
+    left: 30px;
+
+    li {
+      color: $branco;
+      margin: 2dvh auto;
+      font-size: 1.1rem;
+    }
+  }
+
+  .precos-planos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+
+    div {
+      margin: auto 2dvw;
+      text-align: center;
+
+      h4 {
+        color: $branco;
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+
+      span {
+        text-decoration: underline;
+        color: $verde-01;
+      }
+    }
+  }
+
+  .botao-assinar {
+    position: absolute;
+    bottom: 20px;
+
+    width: 70%;
+    height: 40px;
+    background-color: $verde-02;
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $marrom;
+    transition: ease-in 0.4s;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid $branco;
+      background-color: $preto-verde;
+      color: $verde-01;
+    }
+  }
+}

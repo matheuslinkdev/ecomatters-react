@@ -7,28 +7,30 @@ const Planos = () => {
   return (
     <main>
       <Voltar rotaDestino="/ecomatters-react/home" />
-      <article>
-        {planos.map((plano, index) => {
-          return (
-            <section key={index}>
+      <article className="planos">
+        {planos.map((plano, index) => (
+          <section key={index} className="card-plano">
+            <div className="conteudo-plano">
               <h2>{plano.nome}</h2>
               <ul>
-                <li>{plano.beneficios[0]}</li>
-                <li>{plano.beneficios[1]}</li>
-                <li>{plano.beneficios[2]}</li>
+                {plano.beneficios.map((beneficio, bIndex) => (
+                  <li key={bIndex}>{beneficio}</li>
+                ))}
               </ul>
-              <div>
-                <h4>R${plano.precoMensal}</h4>
-                <span>Mensal</span>
-              </div>
-              <div>
-                <h4>R${plano.precoAnual}</h4>
-                <span>Anual</span>
-              </div>
+              <section className="precos-planos">
+                <div>
+                  <h4>R${plano.precoMensal}</h4>
+                  <span>Mensal</span>
+                </div>
+                <div>
+                  <h4>R${plano.precoAnual}</h4>
+                  <span>Anual</span>
+                </div>
+              </section>
               <BotaoAssinar />
-            </section>
-          );
-        })}
+            </div>
+          </section>
+        ))}
       </article>
     </main>
   );
