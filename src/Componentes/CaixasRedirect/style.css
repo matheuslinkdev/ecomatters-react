@@ -1,0 +1,39 @@
+.lista-caixas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 5dvh auto;
+}
+
+.lista-caixas > section {
+  background-image: url("../../imgs/blob-scene-haikei (1).svg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+  height: 100px;
+  margin: auto 5dvw;
+  background-color: #3f8d23;
+  position: relative;
+  border-radius: 5px;
+}
+
+.lista-caixas > section > p {
+  color: #fafafa;
+  padding: 5px;
+  position: absolute;
+  bottom: 5px;
+  filter: drop-shadow(0 2px 2px #326c1f);
+}
+
+.link-redirecionamento {
+  font-size: 1.3rem;
+  color: #c1ebab;
+  font-weight: 700;
+  padding: 5px;
+  transition: linear 0.2s;
+}
+.link-redirecionamento:hover {
+  color: #fafafa;
+}/*# sourceMappingURL=style.css.map */

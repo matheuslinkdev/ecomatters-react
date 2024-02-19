@@ -1,0 +1,42 @@
+* {
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("imgs/bg-02.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.link-retorno {
+  color: #3f8d23;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: linear 0.3s;
+  border-bottom: 1px solid #3f8d23;
+  position: absolute;
+  top: 55px;
+  left: 15px;
+}
+.link-retorno:hover {
+  color: #274a1d;
+  border-bottom: 1px solid #274a1d;
+}
+
+.nome-pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nome-pagina > h1 {
+  position: absolute;
+  top: 60px;
+  color: #326c1f;
+}/*# sourceMappingURL=index.css.map */

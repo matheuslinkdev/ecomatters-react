@@ -1,0 +1,25 @@
+.pag-textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textos-sobre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10dvh;
+  max-width: 90dvw;
+}
+.textos-sobre > section {
+  width: 400px;
+  max-width: 85dvw;
+  margin: 3dvh 5dvw;
+}
+.textos-sobre > section p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #795548;
+}/*# sourceMappingURL=style.css.map */

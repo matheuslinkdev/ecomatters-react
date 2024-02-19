@@ -1,0 +1,87 @@
+.planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15dvh;
+}
+.planos .card-plano {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  max-width: 90%;
+  height: 400px;
+  background-image: radial-gradient(#3f8d23, #326c1f);
+  border-radius: 15px;
+  margin: 3dvh auto;
+  position: relative;
+  transition: linear 0.6s;
+}
+.planos .card-plano:hover {
+  transform: scale(1.1);
+}
+.planos .conteudo-plano {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.planos h2 {
+  position: absolute;
+  top: 30px;
+  color: #c1ebab;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.planos ul {
+  position: absolute;
+  top: 90px;
+  margin: auto;
+  left: 30px;
+}
+.planos ul li {
+  color: #fafafa;
+  margin: 2dvh auto;
+  font-size: 1.1rem;
+}
+.planos .precos-planos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 100px;
+}
+.planos .precos-planos div {
+  margin: auto 2dvw;
+  text-align: center;
+}
+.planos .precos-planos div h4 {
+  color: #fafafa;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.planos .precos-planos div span {
+  text-decoration: underline;
+  color: #c1ebab;
+}
+.planos .botao-assinar {
+  position: absolute;
+  bottom: 20px;
+  width: 70%;
+  height: 40px;
+  background-color: #98dd79;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #795548;
+  transition: ease-in 0.4s;
+}
+.planos .botao-assinar:hover {
+  cursor: pointer;
+  border: 1px solid #fafafa;
+  background-color: #11280b;
+  color: #c1ebab;
+}/*# sourceMappingURL=style.css.map */
